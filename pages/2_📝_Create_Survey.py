@@ -3,7 +3,7 @@ from database.crud import create_survey, add_question
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 import json
-
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 engine = create_engine("sqlite:///survey.db")
 
 def show():
