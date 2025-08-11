@@ -1,1 +1,22 @@
+/* Main container */
+.stApp {
+    background-color: #f8f9fa;
+}
 
+/* Survey cards */
+.stContainer {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background: white;
+}
+
+/* Animated buttons */
+.stButton>button {
+    transition: all 0.3s ease;
+}
+.stButton>button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
