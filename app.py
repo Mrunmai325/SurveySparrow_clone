@@ -9,6 +9,7 @@ def load_lottie(filepath):
     with open(filepath) as f:
         return json.load(f)  # Load animation JSON
 
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 # Display animation
 st_lottie(load_lottie("assets/animations/welcome.json"), 
           height=200, 
