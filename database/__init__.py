@@ -1,13 +1,11 @@
+# database/__init__.py
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from .models import Base
+from .models import Base  # Your SQLAlchemy models
 
-# Database connection
+# Initialize database
 engine = create_engine("sqlite:///survey.db")
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-def init_db():
-    Base.metadata.create_all(bind=engine)
 
 def get_db():
     db = SessionLocal()
