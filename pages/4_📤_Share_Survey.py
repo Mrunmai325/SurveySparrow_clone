@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from database.models import Survey
 from database.crud import get_db
 import pyperclip
-
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 def show():
     st.title("📤 Share Your Survey")
     db = next(get_db())
