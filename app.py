@@ -5,6 +5,15 @@ import database.models as models
 from database.crud import init_db
 from sqlalchemy import create_engine
 
+def load_lottie(filepath):
+    with open(filepath) as f:
+        return json.load(f)  # Load animation JSON
+
+# Display animation
+st_lottie(load_lottie("assets/animations/welcome.json"), 
+          height=200, 
+          key="welcome")
+
 # Initialize database
 engine = create_engine("sqlite:///survey.db")
 init_db(engine)
