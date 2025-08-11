@@ -5,7 +5,7 @@ from sqlalchemy.orm import Session
 from database.models import Survey, Question, Response, Answer
 from database.crud import get_db
 import openai
-
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 def generate_ai_insights(survey_title, questions, responses_df):
     prompt = f"""Analyze survey results for "{survey_title}":
     
