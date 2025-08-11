@@ -21,13 +21,6 @@ def load_lottie(filepath):
     with open(filepath, "r") as f:
         return json.load(f)
 
-# In app.py
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-local_css("assets/animations/spinner.css")
-
 # Show spinner
 st.markdown('<div class="loader"></div>', unsafe_allow_html=True)
 
