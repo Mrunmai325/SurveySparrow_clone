@@ -6,9 +6,11 @@ from database.models import Survey, Response
 from database.crud import get_db
 from datetime import datetime, timedelta
 
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 def load_lottie(filepath):
     with open(filepath, "r") as f:
         return json.load(f)
+        
 
 def show():
     st.title("Survey Dashboard")
