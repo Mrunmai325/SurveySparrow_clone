@@ -1,5 +1,6 @@
 streamlit==1.29.0
 sqlalchemy==1.4.46
-psycopg2-binary==2.9.6  # For PostgreSQL
-# OR for SQLite:
-# sqlite3==2.6.0  # (Usually comes with Python)
+psycopg2-binary==2.9.6
+pandas==1.5.3
+python-dotenv==1.0.0
+numpy==1.24.0
