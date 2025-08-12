@@ -1,2 +1,5 @@
 streamlit==1.29.0
-sqlalchemy==1.4.46  # Critical! (2.0+ sometimes fails)
+sqlalchemy==1.4.46
+psycopg2-binary==2.9.6  # For PostgreSQL
+# OR for SQLite:
+# sqlite3==2.6.0  # (Usually comes with Python)
