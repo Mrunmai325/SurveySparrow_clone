@@ -1,6 +1,5 @@
-# Streamlit secrets
+# Secrets
 .streamlit/secrets.toml
 
-# Other files to ignore (optional)
-__pycache__/
-*.env
+# Database
+*.db
