@@ -1,5 +1,5 @@
 streamlit==1.29.0
-pandas==2.0.3  # Slightly older but more stable
-sqlalchemy==1.4.46  # Downgrade (2.0+ sometimes causes issues)
-python-dotenv==1.0.0
+pandas==1.5.3  # Downgrade (more stable)
 numpy==1.24.0  # Required by pandas
+python-dotenv==1.0.0
+sqlalchemy==1.4.46  # Downgrade from 2.0
